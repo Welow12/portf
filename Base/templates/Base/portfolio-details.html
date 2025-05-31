@@ -1,0 +1,99 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1>Portfolio Details</h1>
+        <p></p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 g-lg-5">
+          <div class="col-lg-6">
+            <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid mb-4" alt="">
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+                <h2></h2>
+                <p>
+                  
+                </p>
+                <p>
+                  
+                </p>
+
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span></span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <div>
+                    <img src="{% static 'img/person/person1.jpg' %}" class="testimonial-img" alt="">
+                    <h3>Bruno Muriuki</h3>
+                    <h4>Designer</h4>
+                  </div>
+                </div>
+
+                <p>
+                  
+                </p>
+
+                <p>
+                  
+                </p>
+
+              </div>
+
+              <div class="portfolio-info mt-5">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong> E commerce Web design</li>
+                  <li><strong>Client</strong>Wilmer collection</li>
+                  <li><strong>Project date</strong> 01 April, 2025</li>
+              
+          
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <a href="{% url 'download-file' %}" type="submit" class="btn btn-primary">Download cv</a>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Work Experience</h2>
+                <p class="lead"></p>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">New Age Agencies</h4>
+                      <span class="period">june, 2024- </span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Graphics Designer</h3>
+                      <p class="description">Developed high quality and eye catching designs for the company </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">devx</h4>
+                      <span class="period">2023 -- </span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Developer</h3>
+                      <p class="description">
+                        self employed
+                      </p>
+                      <!-- <ul>
+                        <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                        <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                      </ul> -->
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <!-- <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Stepping Stone Ltd.</h4>
+                      <span class="period">2015-2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Graphic design specialist</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+                <p class="lead"></p>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">chuka University</h4>
+                      <span class="period">2021-2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bsc Information Technogy</h3>
+                      <p class="description"></p>
+                    </div>
+                  </div>
+
+                  <!-- <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Nullam Corp</h4>
+                      <span class="period">2019 - 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Master of Fine Arts &amp; Graphic Design</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Vestibulum University</h4>
+                      <span class="period">2015-2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bachelor of Fine Arts &amp; Graphic Design</h3>
+                      <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+{% endblock %}

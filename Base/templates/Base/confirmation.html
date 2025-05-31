@@ -1,0 +1,26 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center">
+
+    <div class="card col-md-4"></div>
+    
+    <div class="card col-md-4 mt-4  align-items-center justify-content-center">
+        <div class="card-title p-4">
+            <h1> message successfully sent! </h1>
+        </div>
+        <div class="card-body ">
+            <p> Thankyou for contacting Bruno Muriuki, 
+                your message has succeessfully been sent. 
+                youll get my feedback as soon as possible</p>
+        </div>
+            
+            <a href="{% url 'home' %}" type="submit" class="btn-btn-submit ">Go home</a>
+        
+    </div>
+    <div class="card col-md-4"></div>
+    
+</div>
+
+{% endblock %}
